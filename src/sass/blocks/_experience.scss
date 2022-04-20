@@ -1,0 +1,19 @@
+.experience-item {
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__percent {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__divider {
+    width: 100%;
+    height: 14px;
+    background: #E8E4DE;
+    border-radius: 4px;
+    margin-top: 27px;
+  }
+}
