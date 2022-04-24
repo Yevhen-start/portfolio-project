@@ -11,3 +11,12 @@ closeElement.addEventListener('click', () => {
   menu.classList.remove('active');
   hamburger.classList.remove('active');
 });
+
+// Скрипт для автоматического подсчета процентов в опыте скиллов
+
+const getPercentExperience = document.querySelectorAll('.experience-item__percent');
+const lines = document.querySelectorAll('.experience-item__divider span');
+
+getPercentExperience.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});
