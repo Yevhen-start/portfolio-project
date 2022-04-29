@@ -64,7 +64,7 @@
   </aside>
   <!-- ./sidepanel -->
   <!-- menu -->
-  <div class="menu">
+  <div class="menu none">
     <div class="menu__block">
       <div class="menu__close">
         <svg width="29" height="30" viewbox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@
   </div>
   <!-- ./menu -->
   <!-- promo -->
-  <section class="promo">
+  <section class="promo none">
     <!-- hamburger -->
     <div class="hamburger">
       <span></span>
@@ -169,7 +169,7 @@
   </section>
   <!-- ./about -->
   <!-- resume -->
-  <section class="resume">
+  <section class="resume none">
     <div class="container">
       <h2 class="title title--fz16 resume__title">Опыт</h2>
       <div class="title title--fz36 resume__subtitle">Чем я буду полезна</div>
@@ -238,7 +238,7 @@
   </section>
   <!-- ./resume -->
   <!-- skill -->
-  <section class="skill">
+  <section class="skill none">
     <div class="container">
       <h2 class="title title--fz16 skill__title">Навыки</h2>
       <div class="title title-fz36 skill__subtitle">Что я использую в работе</div>
@@ -358,7 +358,7 @@
   </section>
   <!-- ./skill -->
   <!-- portfolio -->
-  <section class="portfolio">
+  <section class="portfolio none">
     <div class="container">
       <h2 class="title title--fz16 portfolio__title">Портфолио</h2>
       <div class="title title-fz36 portfolio__subtitle">Мои работы</div>
@@ -387,7 +387,7 @@
   </section>
   <!-- ./portfolio -->
   <!-- price -->
-  <section class="price">
+  <section class="price none">
     <div class="container">
       <h2 class="title title--fz16 price__title">Прайс-лист</h2>
       <div class="divider"></div>
@@ -439,7 +439,7 @@
   </section>
   <!-- ./price -->
   <!-- contacts -->
-  <section class="contacts">
+  <section class="contacts none">
     <div class="container">
       <div class="contacts__wrapper">
         <div class="contacts__photo">
@@ -467,19 +467,23 @@
           <div class="title title--fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
           <form action="#" class="contacts__form">
             <div class="contacts__input">
-              <input name="name" id="name" type="text">
+              <input required name="name" id="name" type="text">
               <label for="name">Ваше имя</label>
             </div>  
             <div class="contacts__input">
-              <input name="email" id="email" type="email">
+              <input required name="email" id="email" type="email">
               <label for="email">Ваша почта</label>
             </div>
             <div class="contacts__textarea">
               <textarea name="text" id="text"></textarea>
               <label for="text">Ваше сообщение</label>
             </div>
-            <div>
+            <div class="contacts__triggers">
               <button class="btn contacts__btn">Отправить сообщение</button>
+              <div class="contacts__policy">
+                <input required type="checkbox"> 
+                <span>Я согласен(а) с <a href="./policy.html">политикой конфиденциальности</a></span>   
+              </div>
             </div>
           </form>
         </div>

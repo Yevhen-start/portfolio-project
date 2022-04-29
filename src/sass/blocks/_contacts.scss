@@ -80,4 +80,27 @@
     font-size: 14px;
     line-height: 21px;
   }
+  &__triggers {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 35px;
+  }
+  &__policy {
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    input {
+      margin-right: 10px;
+    }
+    a {
+      color: blue;
+      transform: .6s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
