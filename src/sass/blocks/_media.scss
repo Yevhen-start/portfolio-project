@@ -22,6 +22,17 @@
       }
     }
   }
+  .resume {
+    &__wrapper {
+      grid-template-columns: repeat(2, 364px);
+      column-gap: 70px;
+    }
+  }
+  .skill {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -44,6 +55,12 @@
         grid-template-columns: 40px 320px;
         column-gap: 20px;   
       }
+    }
+  }
+  .resume {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
     }
   }
 }
@@ -77,6 +94,22 @@
         grid-template-columns: 40px 200px;
         column-gap: 20px;
       }
+    }
+  }
+  .resume {
+    padding-top: 40px;
+    &__wrapper {
+      padding: 30px 0 0 0;
+    }
+  }
+  .skill {
+    padding-top: 40px;
+    &__items,
+    &__experiences {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__experiences {
+      margin-top: 70px;
     }
   }
 }
@@ -115,6 +148,20 @@
     }
     &__skills {
       grid-template-columns: 1fr;
+    }
+  }
+  .resume {
+    &__item-body {
+      padding-left: 25px;
+    }
+  }
+  .skill {
+    &__items,
+    &__experiences {
+      grid-template-columns: 1fr;
+    }
+    &__subtitle {
+      line-height: 30px;
     }
   }
 }
